@@ -4,13 +4,13 @@ let
 in
 pkgs.stdenv.mkDerivation rec {
     name = "thorium-${version}";
-    version = "124.0.6367.218";
+    version = "126.0.6478.231";
 
     dontPatchELF = true;
 
     src = pkgs.fetchurl {
         url = "https://github.com/Alex313031/thorium/releases/download/M${version}/thorium-browser_${version}_AVX2.deb";
-        hash = "sha256-nXz5ocZYDBWLIaARk8lN9LhP+7p8bEx+Kk+JAT2tG5c=";
+        hash = "sha256-8584o1RrhlTx0e0Gj5sr2wftIgzYTuu+DUatdxURe4U=";
     };
     sourceRoot = ".";
     unpackPhase = "dpkg-deb --fsys-tarfile ${src} | tar -x --no-same-owner";
