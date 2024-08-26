@@ -6,8 +6,8 @@ pkgs.stdenv.mkDerivation {
   src = fetchFromGitHub {
     owner = "arielherself";
     repo = "aria2";
-    rev = "b9e23f3";
-    sha256 = "sha256-hwA0M00gZyKXDNqJNs4INEHKGjmo7yq0h0Km5tX0JxA=";
+    rev = "99a2f10";
+    sha256 = "sha256-kgO9o3mM0eBWjp2vC5bdA4zFd/O79K7bhMeqLtTn1NY=";
   };
 
   strictDeps = true;
