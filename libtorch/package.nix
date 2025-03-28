@@ -5,13 +5,13 @@ let
   # this derivation. However, we should ensure on version bumps
   # that the CUDA toolkit for `passthru.tests` is still
   # up-to-date.
-  version = "2.7.0.dev20250312";
+  version = "2.6.0";
   device = "cuda";
   srcs = {
     x86_64-linux-cuda = {
-      name = "libtorch-cxx11-abi-shared-with-deps-2.7.0.dev20250312+cu128.zip";
-      url = "https://download.pytorch.org/libtorch/nightly/cu128/libtorch-cxx11-abi-shared-with-deps-2.7.0.dev20250312%2Bcu128.zip";
-	  hash = "sha256-XsZBdqIhVHszvn1m6dDolYfd7FTbSlDMjrqsYSdQ/y4=";
+      name = "libtorch-cxx11-abi-shared-with-deps-2.6.0+cu126.zip";
+      url = "https://download.pytorch.org/libtorch/cu126/libtorch-cxx11-abi-shared-with-deps-2.6.0%2Bcu126.zip";
+	  hash = "sha256-op6DiDDUSW9MiqgPEbdk3oSc3zv7eDY/5hf4S9JWG6c=";
     };
   };
   unavailable = throw "libtorch is not available for this platform";
